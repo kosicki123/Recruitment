@@ -27,7 +27,8 @@ class BaseRouter {
     
     static func getEncodingFor(method: Alamofire.Method) ->Alamofire.ParameterEncoding {
         switch method {
-        //Possibility to change encoding for different methods, e.g: GET = URL, POST = JSON
+        case .GET:
+            return Alamofire.ParameterEncoding.URL
         default:
             return Alamofire.ParameterEncoding.JSON
         }

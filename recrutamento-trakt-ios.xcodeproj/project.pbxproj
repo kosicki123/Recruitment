@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16659DB61B5481940047D51B /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16659DB51B5481940047D51B /* ResponseCollectionSerializable.swift */; };
+		16659DB81B5484B40047D51B /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16659DB71B5484B40047D51B /* ResponseObjectSerializable.swift */; };
 		16B396411B54253A00AC9000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B396401B54253A00AC9000 /* AppDelegate.swift */; };
 		16B396461B54253A00AC9000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B396441B54253A00AC9000 /* Main.storyboard */; };
 		16B396481B54253A00AC9000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B396471B54253A00AC9000 /* Images.xcassets */; };
@@ -14,13 +16,17 @@
 		16B396571B54253A00AC9000 /* recrutamento_trakt_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B396561B54253A00AC9000 /* recrutamento_trakt_iosTests.swift */; };
 		16ECEE0D1B543E2C000294FE /* ShowStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE0C1B543E2C000294FE /* ShowStore.swift */; };
 		16ECEE141B543FDA000294FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE131B543FDA000294FE /* Constants.swift */; };
-		16ECEE191B544528000294FE /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE181B544528000294FE /* Alamofire-SwiftyJSON.swift */; };
-		16ECEE1B1B544586000294FE /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE1A1B544586000294FE /* ShowCell.swift */; };
+		16ECEE1B1B544586000294FE /* ShowCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE1A1B544586000294FE /* ShowCollectionCell.swift */; };
 		16ECEE1D1B544615000294FE /* ShowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE1C1B544615000294FE /* ShowListViewController.swift */; };
 		16ECEE1F1B54464D000294FE /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE1E1B54464D000294FE /* Show.swift */; };
 		16ECEE241B544729000294FE /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE221B544729000294FE /* BaseRouter.swift */; };
 		16ECEE251B544729000294FE /* ShowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECEE231B544729000294FE /* ShowRouter.swift */; };
-		FFD600C0233C1DDD5AFFB4C0 /* Pods_recrutamento_trakt_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB3808A797F6C07212943A6 /* Pods_recrutamento_trakt_ios.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		16F46A551B54AE310002CAB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A541B54AE310002CAB4 /* Alamofire.framework */; };
+		16F46A571B54AE9F0002CAB4 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A561B54AE9F0002CAB4 /* WebImage.framework */; };
+		16F46A581B54AF2C0002CAB4 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A561B54AE9F0002CAB4 /* WebImage.framework */; };
+		16F46A591B54AF2C0002CAB4 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A561B54AE9F0002CAB4 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16F46A5A1B54AF2C0002CAB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A541B54AE310002CAB4 /* Alamofire.framework */; };
+		16F46A5B1B54AF2C0002CAB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F46A541B54AE310002CAB4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16F46A5C1B54AF2C0002CAB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16F46A591B54AF2C0002CAB4 /* WebImage.framework in Embed Frameworks */,
+				16F46A5B1B54AF2C0002CAB4 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		16659DB51B5481940047D51B /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
+		16659DB71B5484B40047D51B /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
 		16B3963B1B54253A00AC9000 /* recrutamento-trakt-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recrutamento-trakt-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B3963F1B54253A00AC9000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B396401B54253A00AC9000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,15 +68,13 @@
 		16B396561B54253A00AC9000 /* recrutamento_trakt_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recrutamento_trakt_iosTests.swift; sourceTree = "<group>"; };
 		16ECEE0C1B543E2C000294FE /* ShowStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowStore.swift; sourceTree = "<group>"; };
 		16ECEE131B543FDA000294FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		16ECEE181B544528000294FE /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
-		16ECEE1A1B544586000294FE /* ShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
+		16ECEE1A1B544586000294FE /* ShowCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCollectionCell.swift; sourceTree = "<group>"; };
 		16ECEE1C1B544615000294FE /* ShowListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowListViewController.swift; sourceTree = "<group>"; };
 		16ECEE1E1B54464D000294FE /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		16ECEE221B544729000294FE /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		16ECEE231B544729000294FE /* ShowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowRouter.swift; sourceTree = "<group>"; };
-		9DB3808A797F6C07212943A6 /* Pods_recrutamento_trakt_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recrutamento_trakt_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7B819032D9E45F6700ADEB1 /* Pods-recrutamento-trakt-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-trakt-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-trakt-ios/Pods-recrutamento-trakt-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		EFEB0A7B3C9118631F0C5C21 /* Pods-recrutamento-trakt-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-trakt-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-trakt-ios/Pods-recrutamento-trakt-ios.release.xcconfig"; sourceTree = "<group>"; };
+		16F46A541B54AE310002CAB4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		16F46A561B54AE9F0002CAB4 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD600C0233C1DDD5AFFB4C0 /* Pods_recrutamento_trakt_ios.framework in Frameworks */,
+				16F46A581B54AF2C0002CAB4 /* WebImage.framework in Frameworks */,
+				16F46A551B54AE310002CAB4 /* Alamofire.framework in Frameworks */,
+				16F46A571B54AE9F0002CAB4 /* WebImage.framework in Frameworks */,
+				16F46A5A1B54AF2C0002CAB4 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +105,6 @@
 				16B3963D1B54253A00AC9000 /* recrutamento-trakt-ios */,
 				16B396531B54253A00AC9000 /* recrutamento-trakt-iosTests */,
 				16B3963C1B54253A00AC9000 /* Products */,
-				17375D546C5610A3ADD40742 /* Pods */,
 				56375C4D514D51E0F27EF73E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -166,7 +189,7 @@
 		16ECEE0B1B542734000294FE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				16ECEE1A1B544586000294FE /* ShowCell.swift */,
+				16ECEE1A1B544586000294FE /* ShowCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,7 +205,8 @@
 		16ECEE171B544517000294FE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				16ECEE181B544528000294FE /* Alamofire-SwiftyJSON.swift */,
+				16659DB51B5481940047D51B /* ResponseCollectionSerializable.swift */,
+				16659DB71B5484B40047D51B /* ResponseObjectSerializable.swift */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -196,19 +220,11 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
-		17375D546C5610A3ADD40742 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C7B819032D9E45F6700ADEB1 /* Pods-recrutamento-trakt-ios.debug.xcconfig */,
-				EFEB0A7B3C9118631F0C5C21 /* Pods-recrutamento-trakt-ios.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		56375C4D514D51E0F27EF73E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9DB3808A797F6C07212943A6 /* Pods_recrutamento_trakt_ios.framework */,
+				16F46A561B54AE9F0002CAB4 /* WebImage.framework */,
+				16F46A541B54AE310002CAB4 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,12 +236,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16B3965A1B54253A00AC9000 /* Build configuration list for PBXNativeTarget "recrutamento-trakt-ios" */;
 			buildPhases = (
-				92A9B883A644B0FCFADA1FA8 /* Check Pods Manifest.lock */,
 				16B396371B54253A00AC9000 /* Sources */,
 				16B396381B54253A00AC9000 /* Frameworks */,
 				16B396391B54253A00AC9000 /* Resources */,
-				65AF2978D2B75343CBE2CF62 /* Embed Pods Frameworks */,
-				73CAAD37FDC372E8D9A07AC7 /* Copy Pods Resources */,
+				16F46A5C1B54AF2C0002CAB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,54 +325,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		65AF2978D2B75343CBE2CF62 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-recrutamento-trakt-ios/Pods-recrutamento-trakt-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73CAAD37FDC372E8D9A07AC7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-recrutamento-trakt-ios/Pods-recrutamento-trakt-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92A9B883A644B0FCFADA1FA8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		16B396371B54253A00AC9000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -367,12 +333,13 @@
 				16ECEE0D1B543E2C000294FE /* ShowStore.swift in Sources */,
 				16ECEE251B544729000294FE /* ShowRouter.swift in Sources */,
 				16ECEE1D1B544615000294FE /* ShowListViewController.swift in Sources */,
-				16ECEE1B1B544586000294FE /* ShowCell.swift in Sources */,
+				16ECEE1B1B544586000294FE /* ShowCollectionCell.swift in Sources */,
 				16B396411B54253A00AC9000 /* AppDelegate.swift in Sources */,
 				16ECEE1F1B54464D000294FE /* Show.swift in Sources */,
-				16ECEE191B544528000294FE /* Alamofire-SwiftyJSON.swift in Sources */,
+				16659DB81B5484B40047D51B /* ResponseObjectSerializable.swift in Sources */,
 				16ECEE141B543FDA000294FE /* Constants.swift in Sources */,
 				16ECEE241B544729000294FE /* BaseRouter.swift in Sources */,
+				16659DB61B5481940047D51B /* ResponseCollectionSerializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,23 +464,31 @@
 		};
 		16B3965B1B54253A00AC9000 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B819032D9E45F6700ADEB1 /* Pods-recrutamento-trakt-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "recrutamento-trakt-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		16B3965C1B54253A00AC9000 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFEB0A7B3C9118631F0C5C21 /* Pods-recrutamento-trakt-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "recrutamento-trakt-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

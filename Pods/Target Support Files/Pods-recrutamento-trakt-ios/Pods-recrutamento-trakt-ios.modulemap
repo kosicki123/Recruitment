@@ -1,6 +1,0 @@
-framework module Pods_recrutamento_trakt_ios {
-  umbrella header "Pods-recrutamento-trakt-ios-umbrella.h"
-
-  export *
-  module * { export * }
-}

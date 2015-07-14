@@ -8,13 +8,15 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
 
 class ShowStore: NSObject {
-    //TODO: retornar lista de shows
-    static func getShows(callback: (response: JSON?) ->()) {
-        request(Router.Shows()).responseSwiftyJSON { (request, response, json, error) -> Void in
-            callback(response: json)
+    static func getShows(callback: (shows: [Show]?, error: NSError?) ->()) {
+        request(Router.Shows()).responseCollection { (request, response, shows: [Show]?, error) -> Void in
+            if let error = error {
+                return callback(shows: nil, error: error);
+            }
+            
+            return callback(shows: shows, error: nil)
         }
     }
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 enum Router: URLRequestConvertible {
-    static let perPage = 50
     
     case Shows()
     
@@ -18,9 +18,14 @@ enum Router: URLRequestConvertible {
     
     var URLRequest: NSURLRequest {
         let (method: Alamofire.Method, path: String, parameters: [String: AnyObject]?) = {
+            var perPage = 20
             switch self {
             case .Shows():
-                return (.GET, "/shows/popular", nil)
+                if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+                    perPage = 50
+                }
+                
+                return (.GET, "/shows/popular", ["extended":"images", "limit": "\(perPage)"])
             }
         }()
         
